@@ -1,4 +1,4 @@
-export function spacesReducer(state = {spacesList: []}, action) {
+export function newsReducer(state = {spacesList: []}, action) {
 	
 	switch(action.type) {
 		case "ADD_SPACE":
@@ -9,4 +9,4 @@ export function spacesReducer(state = {spacesList: []}, action) {
 }
 
 
-export default spacesReducer
+export default newsReducer
