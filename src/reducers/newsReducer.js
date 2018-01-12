@@ -1,8 +1,11 @@
-export function newsReducer(state = {spacesList: []}, action) {
+export function newsReducer(state = {articlesList: []}, action) {
 	
 	switch(action.type) {
-		case "ADD_SPACE":
-			return Object.assign({}, state, {spacesList: action.payload})
+		case "ADD_ARTICLE":
+			return Object.assign({}, state, {articlesList: action.payload})
+		case "FETCHED_SOURCE":
+			// console.log("in newsReducer", action.payload.articles)
+			return Object.assign({}, state, {articlesList: action.payload})
 		default:
 			return state;
 	}

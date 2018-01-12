@@ -1,5 +1,8 @@
 import React, { Component } from 'react';
 import './App.css';
+import Navbar from './components/Navbar';
+import Custom from './components/Custom';
+import { Route } from 'react-router-dom';
 import Home from './components/Home';
 
 class App extends Component {
@@ -12,7 +15,9 @@ class App extends Component {
     
     return (
       <div className="AppFile">
-        <Home />
+      	<Navbar />
+      	<Route exact path="/news" component={Custom} />
+      	<Route exact path="/" component={Home} />
       </div>
     );
   }

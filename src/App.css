@@ -1,6 +1,29 @@
+@import url('https://fonts.googleapis.com/css?family=Spectral+SC');
+@import url('https://fonts.googleapis.com/css?family=Alegreya|Spectral+SC');
+
 .title {
 	text-align: center;
 	font-weight: normal;
 	font-size: 50px;
-	font-family: 'Helvetica';
+	font-family: 'Spectral SC', serif;
+}
+
+.newsTitle, .description, .articleButton {
+	font-family: 'Alegreya', serif;
+}
+
+/*.description {
+	font-family: 'Alegreya', serif;
+}
+
+.articleButton {
+	font-family: 'Alegreya', serif;
+}*/
+
+div.ui.search.selection.scrolling.dropdown {
+	margin-top: 20px;
+}
+
+div.ui.black.segment {
+	margin-top: 25px;
 }
