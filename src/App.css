@@ -8,22 +8,37 @@
 	font-family: 'Spectral SC', serif;
 }
 
-.newsTitle, .description, .articleButton {
+.newsTitle, .description, .articleButton, div.default.text, div.item, div.text, button.ui.button.articleButton {
 	font-family: 'Alegreya', serif;
 }
 
-/*.description {
-	font-family: 'Alegreya', serif;
+div.ui.compact.message.description {
+	text-align: center;
+	font-size: 16px !important;
+	margin: 0 auto;
+	margin-top: 20px;
 }
 
-.articleButton {
-	font-family: 'Alegreya', serif;
-}*/
+span.text, input.search, div.text {
+	font-size: 15px;
+}
+
+div.ui.black.segment {
+	width: 650px;
+	margin-left: 20px;
+}
 
 div.ui.search.selection.scrolling.dropdown {
 	margin-top: 20px;
+	margin-bottom: 10px;
 }
 
 div.ui.black.segment {
 	margin-top: 25px;
+	height: 250px;
+}
+
+a.item {
+	font-family: 'Spectral SC', serif;
+	/*font-size: 15px;*/
 }

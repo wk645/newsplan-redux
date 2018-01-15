@@ -4,7 +4,7 @@ import newsOptions from './newsOptions';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import * as ArticleActions from '../actions/articles';
-import { Dropdown } from 'semantic-ui-react';
+import { Dropdown, Grid } from 'semantic-ui-react';
 
 class Custom extends React.Component {
 
@@ -29,8 +29,10 @@ class Custom extends React.Component {
 			<div>
 				<center>
 					<Dropdown className="dropdown" placeholder="Select a Source" search selection options={newsOptions} onChange={this.handleSelect} scrolling={true} />
-					{news}
 				</center>
+				<Grid relaxed columns={2}>
+					{news}
+				</Grid>
 			</div>
 		)
 	}

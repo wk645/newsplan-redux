@@ -6,8 +6,6 @@ import { Grid, Segment, Button } from 'semantic-ui-react';
 
 const CustomArticle = (props) => {
 
-	// console.log("article", props.articles.author);
-
 	const handleClick = () => {
 		window.open(`${props.article.url}`)
 	}
